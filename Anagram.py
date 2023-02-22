@@ -26,6 +26,7 @@ if len(a) == len(b):
     else:
         for i in a:
             if i in b:
+                b.remove(i)
                 cont += 1
             else:
                 print("No es anagrama")
