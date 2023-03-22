@@ -42,10 +42,14 @@ class Shelter:
 
 
     def dequeve_dog(self):
+        if self.length == 0:
+            return "Sorry! There are no more dogs"
+
         if self.first == self.last:
+            temp = self.first
             self.first = None
             self.last = None
-            return None 
+        
         else:
             temp = self.first
             self.first = temp.next
