@@ -41,7 +41,7 @@ class Shelter:
         self.length += 1
 
 
-    def dequeve_dog(self):
+    def dequeue_dog(self):
         if self.length == 0:
             return "Sorry! There are no more dogs"
 
@@ -79,7 +79,7 @@ while op != 4:
         my_animal_shelter.enqueue_dog(name, age, breed, day)
 
     elif op == 2:
-        get = my_animal_shelter.dequeve_dog()
+        get = my_animal_shelter.dequeue_dog()
         print(f'\nThe data of the dog you adopted are: \n\t{get}\n')
 
     elif op == 3:
