@@ -3,7 +3,7 @@
 #Create the data structure to maintain the system and implement operations such as enqueue_dogs or dequeue_dogs.
 from datetime import datetime 
 
-class Node:
+class Dog:
 
     def __init__(self, name, age, breed, date):
         self.name = name
@@ -30,7 +30,7 @@ class Shelter:
 
     def enqueue_dog(self, name, age, breed, date):
 
-        new_dog = Node(name, age, breed, date)
+        new_dog = Dog(name, age, breed, date)
 
         if self.length == 0:
             self.first = new_dog
